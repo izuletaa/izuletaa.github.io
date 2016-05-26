@@ -16,8 +16,19 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Indie+Flower|Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../css/style.css">
 	<script src="modernizr-latest.js"></script>
+		<script type="text/javascript">
+		window.onload=function(){alert('Bienvenido a esta pagina');}
+		window.onunload=function(){alert('Vuelva en otro momento');}
+		</script>
 	
-	
+		<script type="text/javascript">
+		function hora() {
+		 var DateString=(new Date()).toString();
+		 self.status=DateString.substring(0,3+DateString.lastIndexOf(':'))+
+		 "Cualquier mensaje";
+		 setTimeout("hora()",200);}
+		hora()
+		</script>
 </head>
 
 <body>
@@ -54,10 +65,9 @@
 
 			</div>
 
-			<script type="text/javascript">
-			document.write("
+			<p>
 					Fundación PATITAS DE CORAZÓN, dedicada al rescate de perros y gatos abandonados o en condición de maltrato, adicionalmente  a fundación gestiona la adopción y el apadrinamiento de los animales a través de diferentes medios, entre ellos la Internet y las Redes Sociales");
-			</script>
+			</p>
 			</article>	
 				
 		</section>
